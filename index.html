@@ -10,7 +10,7 @@
                <script type="text/javascript">
            const title = React.createElement('h1', null, 'Hello, World!!!');
            const link = React.createElement('a', { href: '//react.dev' }, 'Rread more');
-           const group = React.createElement('div', null, title, link);
+           const group = React.createElement(React.Fragment, null, title, link);
            const domElement = document.getElementById('root');
            const root = ReactDOM.createRoot(domElement).render(group);
                </script>
