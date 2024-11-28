@@ -1,0 +1,21 @@
+       <!DOCTYPE html>
+       <html>
+          <head>
+               <title>My First react Application</title>
+               <script src="//unpkg.com/react@18/umd/react.development.js"></script>
+               <script src="//unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+          </head>
+          <body>
+               <div id="root"></div>
+               <script type="text/javascript">
+           const title = React.createElement('h1', null, 'Hello, World!!!');
+           const link = React.createElement('a', { href: '//react.dev' }, 'Rread more');
+           const group = React.createElement('div', null, title, link);
+           const domElement = document.getElementById('root');
+           const root = ReactDOM.createRoot(domElement).render(group);
+               </script>
+          </body>
+       </html>
+ 
+
+
